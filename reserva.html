@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightblue;">
+    <h1>Haga su reserva</h1>
+    <form action="procesareserva.php" method="get">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <p>
+                <label for="Nombre">Nombre:</label> 
+                <br>
+                <input type="text" name="Nombre" id="Nombre" maxlength="100" autofocus>
+            </p>
+            <p>
+                <label for="Apellidos">Apellidos:</label>
+                <br>
+                <input type="text" name="Apellidos" id="Apellidos" maxlength="100">
+            </p>
+            <p>
+                <label for="Dni">DNI:</label>
+                <br>
+                <input type="text" name="Dni" id="Dni" maxlength="10" placeholder="DNI con letra">
+            </p>
+        </fieldset>
+            <p>
+
+        <fieldset>
+            <legend>Datos de su estancia</legend>
+            <p>
+                Habitación:
+                <input type="radio" name="Individual" value="Individual" checked>Individual
+                <input type="radio" name="Doble" value="Doble">Doble
+                <input type="radio" name="Triple" value="Triple">Triple
+            </p>
+                Numero de personas:
+            <select name="Personas">
+                <option value="una" selected>1</option>
+                <option value="dos">2</option>
+                <option value="tres">3</option>
+            </select>
+            <p>
+                Llevo mascotas: <input type="checkbox" name="mascota">
+            </p>
+                Fecha de llegada: <input type="date" name="fecha">
+                Hora de llegada: <input type="time" name="hora">
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar">
+    </form>
+    <br>
+    <a href="../index.html" alt="Pagina de inicio">Volver al inicio</a>
+</body>
+</html>
